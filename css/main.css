@@ -1,0 +1,320 @@
+* {
+  font-family: "Urbanist", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  min-height: 100vh;
+  background-color: white;
+  color: #555555;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.07);
+}
+.sidebar-header {
+  background-color: #efefee;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+.sidebar-header > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.sidebar-header > h3 {
+  color: #111111;
+  font-size: 23px;
+}
+.nav-items-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.nav-item {
+  color: #555555;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.nav-item:hover {
+  color: #ff0000;
+}
+.nav-item > span {
+  margin-left: 20px;
+}
+.body-content {
+  margin-left: 270px;
+}
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid #7e7e7e40;
+}
+.searchbar {
+  width: 70%;
+}
+.searchbar input {
+  width: 100%;
+  padding: 15px 30px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+.searchbar input:focus {
+  border-color: #ff0000;
+}
+.button {
+  font-size: 16px;
+  background: linear-gradient(to right, #ff0000 50%, #ffe61c 50%);
+  background-size: 200% 100%;
+  background-position: left;
+  color: white;
+  width: 150px;
+  padding: 13px 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover,
+.button:focus {
+  background-position: right;
+  color: #111111;
+}
+.main-content {
+  padding: 30px;
+}
+.banner {
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../assets/ChickenRepublic_HomePageBanner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+.banner h1 {
+  font-size: 45px;
+  line-height: 1.5em;
+  width: 50%;
+}
+.featured-meals-section {
+  margin-top: 50px;
+}
+.meals-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.meal {
+  width: 18%;
+  border-radius: 5px;
+  margin: 0px 11px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.meal:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.09);
+}
+.meal > img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.meal-details {
+  padding: 20px;
+}
+.meal-details small {
+  font-size: 15px;
+}
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-info button {
+  font-size: 16px;
+  background: none;
+  border: none;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+.fa-plus {
+  padding: 5px 7px;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 5px;
+}
+.top-picks-section {
+  margin-top: 20px;
+}
+.filter-section {
+  text-align: center;
+  padding: 20px 20px 40px;
+}
+.filter-section > form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.filter-section select {
+  width: 70%;
+  padding: 15px 30px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: 0.3s;
+}
+.content-heading {
+  text-align: center;
+  padding: 20px;
+}
+.list-container {
+  width: 70%;
+  border: 1px solid #f5f5f5;
+  border-radius: 7px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+  margin: auto;
+}
+.list-container > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.list-container > table tr:nth-of-type(even) {
+  background-color: #efefef;
+}
+.list-container > table th,
+.list-container > table td {
+  text-align: left;
+  padding: 10px 20px;
+}
+.table-action {
+  font-size: 14px;
+}
+.table-action a {
+  color: #111111;
+}
+.analytics-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+}
+.analytics-box {
+  width: 23%;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.09);
+}
+.form-card {
+  width: 70%;
+  margin: auto;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05);
+}
+.form-header {
+  background-color: #efefef;
+  padding: 30px;
+}
+.form-header > h2 {
+  margin: 0 0 10px;
+}
+.form-body {
+  padding: 30px;
+}
+.form-footer {
+  text-align: right;
+  background-color: #efefef;
+  padding: 30px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.input-field {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.input-field:focus {
+  border-color: #ff0000;
+}
+.alert {
+  text-align: center;
+  color: white;
+  width: 70%;
+  padding: 20px;
+  border-radius: 7px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.alert-danger {
+  background-color: rgba(255, 0, 0, 0.411);
+}
+.alert-success {
+  background-color: rgba(0, 128, 0, 0.425);
+}
+.cart-items-container {
+  width: 70%;
+  margin: auto;
+}
+.cart-item {
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.09);
+}
+.cart-item .item-image img {
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.item-description {
+  margin-left: 30px;
+}
+.item-description h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.item-update {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.item-update input {
+  text-align: center;
+  width: 45px;
+  padding: 15px 5px;
+  margin-top: 0;
+}
+.item-update button {
+  width: 100px;
+}
