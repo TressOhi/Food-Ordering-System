@@ -3,7 +3,7 @@
   include "./inc/nav.php";
   require_once './config/conn.php';
 
-  $fav_sql = "SELECT * FROM favorites LEFT JOIN menu ON favorites.menu_id = menu.id";
+  $fav_sql = "SELECT * FROM favorites LEFT JOIN menu ON favorites.menu_id = menu.id WHERE favorites.user_id = '$_SESSION[user]'";
   $fav_req = mysqli_query($connection, $fav_sql);
 ?>
 <div class="main-content">
@@ -29,14 +29,15 @@
         <th>Actions</th>
       </tr>
       <?php
+        $i=0;
         while($fav_res = mysqli_fetch_assoc($fav_req)){
       ?>
         <tr>
-          <td><?php echo $fav_res['f_id']?></td>
+          <td><?php echo $i = $i+1 ?></td>
           <td><?php echo $fav_res['name']?></td>
           <td><?php echo $fav_res['price']?></td>
           <td class="table-action">
-            <a href="add-to-cart.php?cart_menu_id=<?php echo $fav_res['f_id']?>">Add to cart</a> 
+            <a href="add-to-cart.php?cart_menu_id=<?php echo $fav_res['menu_id']?>">Add to cart</a> 
             | 
             <a href="remove-favorite.php?id=<?php echo $fav_res['f_id']?>">Remove</a>
           </td>
