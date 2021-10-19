@@ -50,6 +50,12 @@ body {
 .nav-item > span {
   margin-left: 20px;
 }
+.count {
+  background-color: #ff0000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 .body-content {
   margin-left: 270px;
 }
@@ -62,6 +68,7 @@ body {
 }
 .searchbar {
   width: 70%;
+  margin-right: 20px;
 }
 .searchbar input {
   width: 100%;
@@ -82,7 +89,6 @@ body {
   color: white;
   width: 150px;
   padding: 13px 20px;
-  margin-left: 20px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -317,4 +323,15 @@ body {
 }
 .item-update button {
   width: 100px;
+  margin-left: 20px;
+}
+.pay-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 1300px) {
+  body {
+    display: none;
+  }
 }
