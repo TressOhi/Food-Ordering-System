@@ -16,7 +16,7 @@
       <i class="fas fa-clipboard-list"></i>
       <span>Categories</span>
     </a>
-    <a href="" class="nav-item">
+    <a href="fulfilled.php" class="nav-item">
       <i class="fas fa-shopping-cart"></i>
       <span>Fulfilled Orders</span>
     </a>
