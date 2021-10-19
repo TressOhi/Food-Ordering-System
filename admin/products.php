@@ -32,10 +32,11 @@
         <th>Actions</th>
       </tr>
       <?php
+        $i=0;
         while($res = mysqli_fetch_assoc($req)){
           echo "
             <tr>
-              <td>{$res['id']}</td>
+              <td>". ($i = $i+1) ."</td>
               <td>{$res['name']}</td>
               <td>{$res['price']}</td>
               <td class='table-action'> 
