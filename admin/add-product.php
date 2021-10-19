@@ -60,7 +60,7 @@
 ?>
 
 <div class="main-content">
-<?php 
+  <?php 
     if (isset($fmsg)) { ?>
       <div class="alert alert-danger"> <?php echo $fmsg; ?> </div>
   <?php } ?>
