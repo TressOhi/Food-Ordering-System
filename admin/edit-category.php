@@ -23,9 +23,9 @@
 
     $sql = "UPDATE menu_category SET name = '$name', description = '$description' WHERE id='$id'";
 
-    $res = mysqli_query($connection, $sql);
+    $req = mysqli_query($connection, $sql);
     
-    if ($res) {
+    if ($req) {
       $smsg = "Category Updated";
       header('location: categories.php?smsg='.$smsg);
     } else {
