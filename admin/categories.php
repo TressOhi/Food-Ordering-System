@@ -33,10 +33,11 @@
         <th>Actions</th>
       </tr>
       <?php
+        $i=0;
         while($res = mysqli_fetch_assoc($req)){
           echo 
             "<tr>
-              <td>" . $res['id'] . "</td>
+              <td>" . $i = $i+1 . "</td>
               <td>" . $res['name'] . "</td>
               <td class='table-action'>
                 <a href='edit-category.php?id={$res['id']}'>Edit</a> 
